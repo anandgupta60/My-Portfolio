@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/A logo Design.jpeg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                
+            </nav>
+            <div class="header-text">
+                <p>Data scientist</p>
+                <h1>Hi,I'm <span>Anand</span><br> Gupta from Kanpur</h1>
+            </div>
+        </div>
+    </div>
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p1>I am a data scientist . i have done</p1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML<br>CSS, Java Script</li>
+                            <li><span>Data Science</span><br>Machine Learning, AI , NLP</li>
+                            <li><span>Analytical Skills</span><br>Coding</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Secondary Education</span><br>from B.N.S.D Shiksha Niketan Kanpur</li>
+                            <li><span>Higher Secondary Education</span><br>Sir Padampat Singhania Kanpur</li>
+                            <li><span>Graduation</span><br>PSIT College of engineering Kanpur</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Air Switch</span><br>Used AR and IoT technology and merged them to create an application that can help to turn 'on' or 'off' any electrical appliance using AR mode switch.</li>
+                            <li><span>Lane Detection Module</span><br>Automatic lane detection is one of the most prudent innovations in AI.</li>
+                            <li><span>Crime And Criminal Tracking Network and System</span><br>Programmed an enhanced searching model for efficient data fetching from the police CCTNS database using phonetic searching operations such as AND, OR etc. this is also capable of phrase searching and truncation.</li>
+                        </ul>
+                    </div>                                  
+                </div>    
+            </div>
+        </div>
+     </div>
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tan-links");
+    var tablinks=document.getElementsByClassName("tan-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-link");
+        }
+    }
+
+</script>     
+    
+ </body>
+ </html>  
